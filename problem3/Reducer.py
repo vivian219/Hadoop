@@ -16,4 +16,4 @@ for line in sys.stdin:
     nameList.setdefault(key,[])
     nameList[key].append(value)
 for item in nameList:
-    print jencode.encode(item.join(len(nameList[item])))
+    print jencode.encode(item+str(len(nameList[item])))
