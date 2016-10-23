@@ -11,6 +11,6 @@ jenc=json.JSONEncoder()
 for line in sys.stdin:
     line=line.strip()
     record=json.loads(line)
-    key=jenc.encode(line[1])
+    key=jenc.encode(record[1])
     value=jenc.encode(record)
     print '%s\t%s' % (key,value)
