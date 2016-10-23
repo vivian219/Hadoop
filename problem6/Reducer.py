@@ -9,6 +9,7 @@ for line in sys.stdin:
     mat.setdefault((k1,k2),values)
     mat[(k1,k2)].append(values)
 for k in mat:
+    print mat[k]
     values=list(mat[k])
     print values[0]
     print values[1]
