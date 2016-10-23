@@ -3,7 +3,7 @@ import json
 
 maxI = 10
 maxJ = 10
-jencode json.JSONEncoder()
+jencode =json.JSONEncoder()
 
 for line in sys.stdin:
     line=line.strip()
@@ -18,4 +18,3 @@ for line in sys.stdin:
             print '%s\t%s\t%s' % (i,j,jencode.encode(record))
     else:
         pass
-        
