@@ -6,13 +6,10 @@ for line in sys.stdin:
     line=line.strip()
     k1,k2,values=line.split('\t',2)
     values=json.loads(values)
-    mat.setdefault((k1,k2),values)
+    mat.setdefault((k1,k2),[])
     mat[(k1,k2)].append(values)
 for k in mat:
-    print mat[k]
     values=list(mat[k])
-    print values[0]
-    print values[1]
     def f1(x):return x[0]=='a'
     def f2(x):return x[0]=='b'
     a_rows=filter(f1,values)
