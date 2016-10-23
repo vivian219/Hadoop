@@ -11,7 +11,7 @@ for line in sys.stdin:
     nameList[key].append(value)
 for x in nameList:
     for y in nameList[x]:
-        if(nameList.has_key(y)&&x in nameList[y]):
+        if(nameList.has_key(y)  and x in nameList[y]):
             nameList[y].remove(x)
             nameList[x].remove(y)
 for item in nameList:
