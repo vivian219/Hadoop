@@ -6,4 +6,4 @@ for line in sys.stdin:
     record=json.loads(line)
     id=record[0]
     nuc=record[1]
-    print '%s\t%s' % 
+    print '%s\t%s' % (id,nuc)
