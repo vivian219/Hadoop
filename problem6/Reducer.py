@@ -10,9 +10,9 @@ for line in sys.stdin:
     mat[(k1,k2)].append(values)
 for k in mat:
     values=list(mat[k])
-    print values
-    def f1(x):return x[0]=='a'
-    def f2(x):return x[0]=='b'
+    print values[0]
+    def f1(x[]):return x[0]=='a'
+    def f2(x[]):return x[0]=='b'
     a_rows=filter(f1,values)
     b_rows=filter(f2,values)
     result=0
