@@ -11,8 +11,10 @@ for line in sys.stdin:
 for k in mat:
     values=list(mat[k])
     print values
-    a_rows=filter(lambda f:x[0]=='a',values)
-    b_rows=filter(lambda f:x[0]=='b',values)
+    def f1(x):return x[0]=='a'
+    def f2(x):return x[0]=='b'
+    a_rows=filter(f1,values)
+    b_rows=filter(f2,values)
     result=0
     for a in a_rows:
         for b in b_rows:
